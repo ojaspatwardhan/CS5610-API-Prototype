@@ -36,7 +36,7 @@ export default class Appointment extends React.Component {
   }
 
   getAPI = () => {
-    fetch("http://sandbox-api.onsched.com/consumer/v1/appointments?status=RS", {
+    fetch("https://sandbox-api.onsched.com/consumer/v1/appointments?status=RS", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

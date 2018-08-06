@@ -18,7 +18,7 @@ export default class AppointmentList extends React.Component {
 
   deleteAppointment(id) {
     console.log(id);
-    fetch("http://sandbox-api.onsched.com/consumer/v1/appointments/" + id + "/cancel", {
+    fetch("https://sandbox-api.onsched.com/consumer/v1/appointments/" + id + "/cancel", {
       method: "PUT",
       headers: {
         "Accept": "application/json",
@@ -28,7 +28,7 @@ export default class AppointmentList extends React.Component {
   }
 
   getAppointments() {
-    fetch("http://sandbox-api.onsched.com/consumer/v1/appointments?status=RS", {
+    fetch("https://sandbox-api.onsched.com/consumer/v1/appointments?status=RS", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
